@@ -30,7 +30,6 @@ license:
 
 # [Imports]
 from build123d import *
-from ocp_vscode import *
 
 # [Parameters]
 # - none
@@ -79,5 +78,4 @@ with BuildPart() as benchy:
         Circle(smoke_stack_radius - 2 * MM, mode=Mode.SUBTRACT)
     extrude(amount=roof_plane_vertices[1].Z - smoke_stack_center.Z)
 
-show(benchy)
 # [End]
