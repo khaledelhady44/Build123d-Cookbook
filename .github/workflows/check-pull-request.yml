@@ -1,9 +1,12 @@
 name: Test Build123d Scripts
 
 on:
-  pull_request_target:  # Run on every new pull request
+  pull_request_target: 
     branches:
-      - main  # Change this if your main branch has a different name
+      - main 
+  pull_request:  
+    branches:
+      - main 
 
 jobs:
   test:
